@@ -1,0 +1,137 @@
+/**index.wxss**/
+text{
+font-family: 'Microsoft YaHei';
+}
+/**首页banner**/
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+/*搜索栏*/
+.search{
+  height: 80rpx;
+}
+
+.search icon{
+margin-top:25rpx;
+margin-left:5rpx;
+}
+
+.search input{
+  float: left;
+  margin:15rpx 0 0 50rpx;
+  width: 600rpx;
+  height: 50rpx;
+  border-radius: 5rpx;
+  border:1px solid lightgrey;
+}
+
+/**导航栏**/
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 720rpx;
+  margin: 15rpx auto;
+  color:white;
+  line-height:160rpx;
+  text-align:center;
+  font-weight: bold;
+  }
+
+.nav view{
+ width: 160rpx;
+ height: 160rpx;
+ background-color: #F55452;
+ border-radius: 5%;
+}
+
+.nav view image{
+ width: 80rpx;
+ height: 80rpx;
+ background-color: #F55452;
+ border-radius: 5%;
+}
+
+/*热点*/
+.hots{
+   margin-top: 30rpx;
+}
+
+.hotheader{
+float: left;
+width: 750rpx;
+}
+
+.left-div{
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  float: left;
+  width: 20rpx;
+  height: 40rpx;
+  background-color: limegreen;
+}
+
+.more{
+float: right;
+color: #7EB63D;
+font-size: 16px;
+line-height: 50rpx;
+margin-right: 30rpx;
+}
+
+/*图文*/
+.list-item{
+   margin-top: 10rpx;
+   border:2rpx solid lightgrey;
+}
+
+.content-item-text{
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  height: 125rpx;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding:0 1% 1% 1%;
+}
+
+.list-item{
+  height: 450rpx;
+  width: 100%;
+}
+
+.list-item-images {
+   height: 350rpx;
+}
+
+.list-item-images image{
+   height:100%; 
+   width: 100%;
+}
+ .list-item-text{
+   height: 200rpx;
+   width: 96%;
+   padding-left: 2% ;
+   padding-right: 4% ;
+  }
+
+.list-item-text-title{
+ margin-top: 10rpx;
+ font-weight: bold;
+}
+
+.list-item-text-content{
+   font-size:24rpx;
+   color: #999;
+  }
+
+.test{
+ width: 320rpx;
+ height: 50rpx;
+ background-color: #7EB63D;
+ border-radius: 1%;
+ margin: 5rpx auto;
+}

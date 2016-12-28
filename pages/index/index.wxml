@@ -1,0 +1,48 @@
+<!--banner-->
+<swiper indicator-dots="{{indicatorDots}}"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!--搜索-->
+<view class="search">
+  <input placeholder="搜索旅行地/酒店/景点" />
+  <icon type="{{iconType}}" size='{{iconSize}}' color='{{iconColor}}' bindtap="testa"/>
+</view>
+
+
+<view class="nav">
+<navigator url="../free/free"><view ><text>自由行</text></view></navigator>
+<navigator url="../drive/drive"><view><text>自驾游</text></view></navigator>
+<navigator url="../package/package"><view><text>跟团游</text></view></navigator>
+<navigator url="../invoice/invoice"><view><text>签证</text></view></navigator>
+</view>
+
+<!--热点-->
+<view class="hots">
+<view class="hotheader">
+<view class="left-div"></view>
+<text>热门资讯</text>
+<text class="more">更多资讯</text>
+</view>
+<view class="clearfix"></view>
+<!--清楚浮动  循环图文-->
+
+<view class="list-item" wx:for="{{listItems}}">
+
+<view class="list-item-images"> 
+<image src="{{item.imgpath}}"></image>
+</view>
+<view class="list-item-text">
+<view class="list-item-text-title">{{item.title}}</view>
+<view class="list-item-text-content">{{item.content}}</view>
+</view>
+</view>
+
+
+</view>
+
+
+<view bindtap="wxpay" class="test">微信支付测试</view>

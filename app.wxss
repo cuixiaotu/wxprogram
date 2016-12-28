@@ -1,0 +1,26 @@
+/**app.wxss**/
+/*取消浮动*/
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+
+.flexstart{
+display: flex;
+flex-direction: column;
+}
+
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}

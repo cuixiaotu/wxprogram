@@ -1,0 +1,66 @@
+.shopcarinfo{
+   display: flex;
+   flex-direction: column;
+   font-family: "Microsoft YaHei" 
+}
+
+ .shopcar_item{
+  border:1rpx solid lightgreen;
+  margin-top:2rpx;
+ }
+
+.shopcar_item image{
+  width: 150rpx;
+  height: 150rpx;
+  padding: 5rpx;
+  float: left;
+}
+
+.shopcarinfo .shopcar_tit{
+  font-size:35rpx;
+}
+
+.shopcarinfo .shopcar_desc{
+  font-size:25rpx;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+  background-color: #F2f2f2;
+  color: #939393;
+}
+.container .cart-image {
+  width: 120px;
+  height: 120px;
+}
+
+.paynow{
+ position: absolute;
+ bottom: 20rpx;
+ left: 50rpx;
+ width: 650rpx;
+ height: 50px;
+ background-color: lightblue;
+ border-radius: 2%;
+ color: #939393;
+}
+
+.paypick{
+   border:1rpx solid lightgreen;
+   line-height: 100rpx;
+}
+
+.paypick image{
+width: 360rpx;
+height: 100rpx;
+}
+
+.paypick radio{
+  margin-left:250rpx;
+}
+
+
+

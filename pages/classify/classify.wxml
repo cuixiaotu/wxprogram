@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="nav_left">
+
+
+    <block wx:for="{{listsinfo}}">
+      <view class="nav_left_items {{curNav == item.classid ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.classid}}">{{item.country}}</view>
+    </block>
+
+
+  </view>
+  <view class="nav_right">
+    <view wx:if="{{listsinfo[curIndex].son}}">
+      <block wx:for="{{listsinfo[curIndex].son}}">
+        <view class="nav_right_items">
+          <navigator url="../list/list?cityid={{item.id}}">
+            <view wx:if="{{item}}">
+              <text>{{item.proname}}</text>
+            </view>
+            <view wx:else>
+              <text>{{item.cityid}}</text>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <view wx:else>暂无数据</view>
+  </view>
+</view>

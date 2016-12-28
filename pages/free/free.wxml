@@ -1,0 +1,9 @@
+<view class="nav left">
+  <view  wx:for="{{navitem}}" class="nav-item">
+  <navigator url="{{item.jump}}">
+  <image src="{{item.url}}" class="nav-item-image"></image>
+  <text class="nav-item-text">{{item.name}}</text>
+  </navigator>
+  </view>
+ </view>
+

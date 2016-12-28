@@ -1,0 +1,21 @@
+<view  wx:if="{{shopcarinfo}}"    class="shopcarinfo">
+<view  class="shopcar_item">
+<image class="shopcar_pic" src="{{shopcarinfo.goodspics}}"></image>
+<text  class="shopcar_title">{{shopcarinfo.goodsname}} \r\n</text>
+<text  class="shopcar_desc">{{shopcarinfo.goodstitle}}
+                             {{shopcarinfo.ourprice}}</text>
+</view>
+
+<view class="paypick">
+<image src="/images/wxpay/WePayLogo.png" class="left"></image>
+<text class="left"></text>
+<radio checked="true" classs="right">支付</radio>
+</view>
+<view class="paynow container" bindtap="paymuch">现在支付</view>
+</view>
+
+
+<view  class="container"  wx:else>
+  <image src="{{cartImg}}" class="cart-image"/>
+  <view>{{tipWords}}</view>
+</view>

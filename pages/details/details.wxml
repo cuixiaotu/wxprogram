@@ -1,0 +1,27 @@
+<view class="container">
+    
+    <view>
+        <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{goodsInfo}}">
+                <swiper-item>
+                    <image src="{{goodsInfo.goodspics}}" class="slide-image"/>
+                    
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="shopping_container">
+        <view class="title">{{goodsInfo.goodstitle}}</view>
+        <view class="reason">{{goodsInfo.goodsdesc}}</view>
+    </view>
+
+    <view>
+       
+        <view class="shopcar"  ontap='addshopcar'>加入购物车</view>
+
+         <view class="price">我们的价格：{{goodsInfo.ourprice}}</view>
+    </view>
+
+</view>

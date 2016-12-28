@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/shopcar/shopcar",
+    "pages/my/index",
+    "pages/my/login",
+    "pages/my/reg",
+    "pages/classify/classify",
+    "pages/details/details",
+    "pages/free/free",
+    "pages/list/list",
+    "pages/free/airplane/airplane",
+    "pages/free/ticket/ticket",
+    "pages/invoice/invoice"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#000000",
+    "navigationBarBackgroundColor": "green",
+    "navigationBarTitleText": "微游宝",
+    "navigationBarTextStyle":"wihte"
+  },
+  "tabBar": {
+    "backgroundColor":"white",
+    "selectedColor":"lightgreen",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "selectedIconPath":"images/star.png",
+      "iconPath":"images/star.png"
+    }, {
+      "pagePath": "pages/classify/classify",
+      "text": "分类",
+      "selectedIconPath":"images/pricetags.png",
+       "iconPath":"images/pricetags.png"
+    },{
+      "pagePath": "pages/shopcar/shopcar",
+      "text": "购物车",
+      "selectedIconPath":"images/car.png",
+       "iconPath":"images/car.png"
+    },
+    {
+      "pagePath": "pages/my/login",
+      "text": "我的",
+      "selectedIconPath":"images/person.png",
+      "iconPath":"images/person.png"
+    }
+    ]
+  },
+   "networkTimeout": {
+    "request": 10000
+  },
+    "debug": false
+}

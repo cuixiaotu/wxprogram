@@ -1,0 +1,48 @@
+<view class="section">
+  <view class="section-title">选择航班日期</view>
+  <picker mode="date" value="{{airdata}}" start="{{startdata}}" end="{{enddata}}" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{airdata}}
+    </view>
+  </picker>
+
+
+<view class="section-content">
+  <view class="left">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker> 
+  </view>
+<view ><image src=""></image></view>
+
+  <view class="left">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker> 
+  </view>
+
+ </view>
+
+
+
+
+
+ <view class="starting">出发地</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+
+ <view class="ending">目的地</view>
+  <picker bindchange="ending" value="{{index}}" range="{{array}}">
+    <view class="picker">
+    {{array[indexd]}}
+    </view>
+  </picker>
+
+</view>

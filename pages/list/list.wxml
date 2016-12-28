@@ -1,0 +1,19 @@
+<view class="container">
+    <block wx:for="{{list}}">
+        <navigator url="../details/details?goodsid={{item.goodsid}}">
+        <view class="brand_item">     
+                <image src="{{item.goodspics}}" class="pic"></image>
+                <view class="right_cont">
+                    <text class="country">{{item.goodsname}}</text>
+                    <text class="name">{{item.goodstitle}}</text>
+                    <view class="price">
+                        <text class="ourprice">￥{{item.ourprice}}.00 \r\r</text>
+                        <!--<text class="discount">8折</text>-->
+                        <text class="marketprice">{{item.otherprice}}.00</text>
+                    </view>
+                </view>
+            
+        </view>
+        </navigator>
+    </block>
+</view>
